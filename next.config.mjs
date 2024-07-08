@@ -8,7 +8,7 @@ const options = {
   theme: "one-dark-pro",
 };
 
-export const mdxOptions = {
+const mdxOptions = {
   remarkPlugins: [remarkGfm],
   rehypePlugins: [[rehypePrettyCode, rehypeHighlight, options]],
 };
