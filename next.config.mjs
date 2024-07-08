@@ -4,7 +4,10 @@ import rehypeHighlight from "rehype-highlight";
 import rehypePrettyCode from "rehype-pretty-code";
 
 const options = {
-  theme: "one-dark-pro",
+  theme: {
+    dark: "one-dark-pro",
+    light: "one-light",
+  },
 };
 
 const mdxOptions = {
