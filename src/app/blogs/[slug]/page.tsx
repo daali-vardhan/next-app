@@ -5,8 +5,6 @@ export async function generateStaticParams() {
   return getAllBlogSlug()
 }
 
-
-
 export default async function page({ params }: { params: { slug: string } }) {
   const blog = await getBlogBySlug(params.slug)
   if(blog === null) return notFound();
