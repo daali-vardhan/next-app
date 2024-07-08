@@ -18,7 +18,7 @@ const withMdx = createMdx({
 });
 
 const nextConfig = {
-  pageExtensions: ["js", "jsx", "mdx", "md", "ts", "tsx"],
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
 export default withMdx(nextConfig);
