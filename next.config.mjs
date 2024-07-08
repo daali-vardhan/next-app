@@ -20,6 +20,8 @@ const withMdx = createMdx({
 
 const nextConfig = {
   output: "export",
+  basePath: "/next-app",
+  reactStrictMode: true,
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
