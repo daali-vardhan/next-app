@@ -21,7 +21,7 @@ const nextConfig = {
   // output: "export",
   // basePath: "/next-app",
   // reactStrictMode: true,
-  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  // pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
 export default withMdx(nextConfig);
