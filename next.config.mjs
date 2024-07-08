@@ -1,5 +1,3 @@
-/** @type {import('next').NextConfig} */
-
 import createMdx from "@next/mdx";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
@@ -18,10 +16,11 @@ const withMdx = createMdx({
   options: mdxOptions,
 });
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  // output: "export",
   // basePath: "/next-app",
-  reactStrictMode: true,
+  // reactStrictMode: true,
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
