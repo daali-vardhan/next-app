@@ -2,32 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 180 40% 98%;
+    --foreground: 180 33% 3%;
+    --card: 180 40% 98%;
+    --card-foreground: 180 33% 3%;
+    --popover: 180 40% 98%;
+    --popover-foreground: 180 33% 3%;
+    --primary: 183 61% 53%;
+    --primary-foreground: 180 33% 3%;
+    --secondary: 183 70% 74%;
+    --secondary-foreground: 180 33% 3%;
+    --muted: 180 39% 20%;
+    --muted-foreground: 180 33% 70%;
+    --accent: 183 79% 62%;
+    --accent-foreground: 180 33% 3%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 180 33% 3%;
+    --border: 180 39% 20%;
+    --input: 180 39% 20%;
+    --ring: 183 79% 40%;
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 180 40% 2%;
+    --foreground: 180 37% 97%;
+    --card: 180 40% 2%;
+    --card-foreground: 180 37% 97%;
+    --popover: 180 40% 2%;
+    --popover-foreground: 180 37% 97%;
+    --primary: 183 61% 47%;
+    --primary-foreground: 180 40% 2%;
+    --secondary: 183 70% 26%;
+    --secondary-foreground: 180 37% 97%;
+    --muted: 180 39% 80%;
+    --muted-foreground: 180 37% 97%;
+    --accent: 183 79% 38%;
+    --accent-foreground: 180 40% 2%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 180 37% 10%;
+    --border: 180 40% 60%;
+    --input: 180 39% 80%;
+    --ring: 183 79% 60%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+:root,html,body {
+  height: 100%;
+  max-width: 100%;
 }
