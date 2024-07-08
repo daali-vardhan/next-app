@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 import createMdx from "@next/mdx";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
@@ -18,6 +19,7 @@ const withMdx = createMdx({
 });
 
 const nextConfig = {
+  output: "export",
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
