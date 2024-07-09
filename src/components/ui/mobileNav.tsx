@@ -6,13 +6,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import {  buttonVariants } from "./button";
+import { buttonVariants } from "./button";
 
 import {
   GitHubLogoIcon,
   HamburgerMenuIcon,
   LinkedInLogoIcon,
-  FileTextIcon
+  FileTextIcon,
 } from "@radix-ui/react-icons";
 import ThemeToggle from "./theme-toggle";
 import Logo from "./logo";
@@ -31,7 +31,7 @@ export default function mobileNav() {
               variant: "ghost",
               size: "icon",
               className: "rounded-lg",
-            })
+            }),
           )}
         >
           <HamburgerMenuIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all " />
@@ -51,7 +51,7 @@ export default function mobileNav() {
                   variant: "outline",
                   size: "default",
                   className: "border-primary text-md text-left justify-start",
-                })
+                }),
               )}
             >
               <FileTextIcon className="h-[1.2rem] w-[1.2rem] mx-2 rotate-0 scale-100 transition-all " />
@@ -66,7 +66,7 @@ export default function mobileNav() {
                   variant: "outline",
                   size: "default",
                   className: "border-primary text-md text-left justify-start",
-                })
+                }),
               )}
             >
               <GitHubLogoIcon className="h-[1.2rem] w-[1.2rem] mx-2 rotate-0 scale-100 transition-all " />
@@ -81,7 +81,7 @@ export default function mobileNav() {
                   variant: "outline",
                   size: "default",
                   className: "border-primary text-md text-left justify-start",
-                })
+                }),
               )}
             >
               <LinkedInLogoIcon className="h-[1.2rem] w-[1.2rem] mx-2 rotate-0 scale-100 transition-all " />
@@ -95,11 +95,12 @@ export default function mobileNav() {
                   size: "default",
                   className:
                     "border-primary text-md text-left w-full flex px-6 items-center gap-2 justify-start",
-                })
+                }),
               )}
               variant="outline"
-
-            ><span>Theme</span></ThemeToggle>
+            >
+              <span>Theme</span>
+            </ThemeToggle>
           </section>
         </SheetContent>
       </Sheet>

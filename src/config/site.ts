@@ -4,5 +4,6 @@ export const siteConfig = {
   githubUrl: "https://github.com/daali-vardhan",
   profileUrl: "/portfolio/profile.jpg",
   companyurl: "https://epam.com",
-  blogUrl: "/blogs"
-}
+  blogUrl: "/blogs",
+  resumeUrl: "/resume.pdf",
+};
