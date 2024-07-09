@@ -22,7 +22,10 @@ const withMdx = createMdx({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/next-app",
+  basePath: "/portfolio",
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
