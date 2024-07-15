@@ -50,6 +50,7 @@ export default function Home() {
           <aside className="flex flex-col md:flex-row flex-1 gap-2">
             <Link
               href={siteConfig.resumeUrl}
+              target="_blank"
               className={cn(
                 buttonVariants({
                   variant: "default",
@@ -61,7 +62,6 @@ export default function Home() {
             </Link>
             <Link
               href={siteConfig.blogUrl}
-              target="_blank"
               className={cn(
                 buttonVariants({
                   variant: "outline",
